@@ -84,7 +84,7 @@ Bước 3:
 Chuyển đổi file bạn vừa kiểm ở trên từ .dtb sang .dts  
 (ví dụ là Pi5-b, thay tên file bạn kiếm được, tùy loại Pi)  
 ```c
-sudo dtc -I dtb -O dts -o bcm2712-rpi-5-b.dts -o bcm2712-rpi-5-b.dtb
+sudo dtc -I dtb -O dts -o bcm2712-rpi-5-b.dts bcm2712-rpi-5-b.dtb
 ```  
   
 Bước 4:  
@@ -111,7 +111,7 @@ Bước 6:
 Chuyển đổi file bạn vừa kiểm ở trên từ .dts sang .dtb  
 (ví dụ là Pi5-b, thay tên file bạn kiếm được, tùy loại Pi)  
 ```c
-sudo dtc -I dts -O dtb -o bcm2712-rpi-5-b.dts bcm2712-rpi-5-b.dtb
+sudo dtc -I dts -O dtb -o bcm2712-rpi-5-b.dtb bcm2712-rpi-5-b.dts
 ```  
   
 ### Cài đặt  

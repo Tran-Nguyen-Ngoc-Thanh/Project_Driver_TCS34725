@@ -68,10 +68,10 @@ sudo i2cdetect -y 1
 
 ### Cấu hình module
 Bước 1:  
-(raspberry pi 5)  
+(raspberry pi 4 và pi 5)  
 ```c
 Cd /boot/firmware
-```  
+``` 
 (raspberry pi 3)  
 ```c
 Cd /boot
@@ -87,8 +87,8 @@ Chuyển đổi file bạn vừa kiểm ở trên từ .dtb sang .dts
 dtc -I dtb -O dts -o bcm2712-rpi-5-b.dts -o bcm2712-rpi-5-b.dtb
 ```  
   
-Bước 4: 
-Truy cập vào file .dts vừa tạo  
+Bước 4:  
+Truy cập vào file .dts vừa tạo.  
 (ví dụ là Pi5-b, thay tên file bạn kiếm được, tùy loại Pi)  
 ```c
 sudo nano bcm2712-rpi-5-b.dts
@@ -115,7 +115,7 @@ dtc -I dts -O dtb -o bcm2712-rpi-5-b.dts bcm2712-rpi-5-b.dtb
 ```  
   
 ### Cài đặt  
-Truy cập vào folder lưu các file driver  
+Truy cập vào folder lưu các file driver.  
 ```c
 make
 ```  
@@ -124,11 +124,12 @@ Sau đó:
 sudo insmod TCS34725_driver.ko
 ```  
   
-### Kiểm tra log kernel và chạy   
+### Kiểm tra log kernel và chạy  
+Kiểm tra:  
 ```c
 dmesg | tail
 ```
-Sau đó:
+Sau đó chạy:
 ```c
 gcc TCS34725_ioctl.c -o run
 sudo ./run

@@ -70,11 +70,11 @@ sudo i2cdetect -y 1
 Bước 1:  
 (raspberry pi 4 và pi 5)  
 ```c
-Cd /boot/firmware
+cd /boot/firmware
 ``` 
 (raspberry pi 3)  
 ```c
-Cd /boot
+cd /boot
 ```  
   
 Bước 2:  

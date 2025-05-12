@@ -5,7 +5,6 @@ Trần Nguyễn Ngọc Thành - MSSV: 22146401
 Nguyễn Thị Yến - MSSV: 22146454
 ```
 
-
 - [Giới thiệu](#giới-thiệu)
 - [Thông số kỹ thuật](#thông-số-kỹ-thuật)
 - [Sơ đồ kết nối](#Sơ-đồ-kết-nối)
@@ -30,11 +29,14 @@ Cảm biến màu TCS34725 có phạm vi ứng dụng rộng, bao gồm:
 - Thiết bị chẩn đoán y tế
 
 # Thông số kỹ thuật
-- Địa chỉ I2C: 0x29  
-- Nguồn cấp: 3.3v - 3.6v  
+- Giao tiếp: I²C, địa chỉ mặc định 0x29  
+- Điện áp hoạt động: 3.3v - 3.6v
+- Dòng tiêu thụ: Khoảng 65µA trong chế độ chờ  
 - Điện áp đầu ra: 3.8  
 - Dòng điện đầu ra: 20mA  
-- Nhiệt độ môi trường hoạt động: -30 ℃ đến 70 ℃   
+- Nhiệt độ môi trường hoạt động: -30 ℃ đến 70 ℃
+- Dải quang phổ: 400–700 nm (phù hợp với ánh sáng nhìn thấy)
+- Độ phân giải: 16-bit cho mỗi kênh màu (RGB và Clear)
 
 # Sơ đồ kết nối
 Phần cứng của TCS34725:  
